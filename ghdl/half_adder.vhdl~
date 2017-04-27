@@ -34,18 +34,9 @@ architecture Structural of half_adder is
       );
   end component;
 
-
 begin
 
   t1: xor_g port map (in_xor1 => in_1, in_xor2 => in_2, output_xor => out_1);
   t2: and_gate port map (in_and1 => in_1, in_and2 => in_2, output_and => out_2);
-
--- ein anderen Weg den Halbaddierer zu realisieren ist es:
--- 
--- out_1 <= in_1 and in_2
--- out_2 <= in_1 xor in_2
---
--- mit den zwei Zeilen hätte man auch nen Halbaddierer gebaut, 
--- was ja heißt "component" kann weg gelassen wird.
 
 end;
