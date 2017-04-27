@@ -46,6 +46,7 @@ begin
 -- out_2 <= in_1 xor in_2
 --
 -- mit den zwei Zeilen hätte man auch nen Halbaddierer gebaut, 
--- was ja heißt "component" kann weg gelassen wird.
-
+-- was ja heißt "component" kann weg gelassen werden.
+-- beschreiben wir also dann das Verhalten des Systems (behaviour) und 
+-- nicht mehr (structural)
 end;
