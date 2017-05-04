@@ -21,8 +21,8 @@ begin
 end behaviour;
 
 
-
-
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity xor_gate is
 end xor_gate;
@@ -41,10 +41,11 @@ begin
   clk: process 
   begin
     cl <= '1';
-    wait for 10 ns;
+    wait for 2.5 ns;
     cl <= '0';
-    wait for 10 ns;
+    wait for 2.5 ns;
   end process clk;
+
   xore: process 
   begin
 
